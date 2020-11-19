@@ -16,7 +16,7 @@ const bot = new Client({partials: ["CHANNEL","GUILD_MEMBER","MESSAGE","REACTION"
 bot.on("ready", async function(){
 console.log(`${bot.user.tag} is now online`)
 });
-bot.on("message", async (message){
+bot.on("message",async (message){
 if(message.author.bot) return;
 
 if(message.channel.id === "channel_id"){ //put the dark chat logs channel id here
