@@ -19,7 +19,7 @@ console.log(`${bot.user.tag} is now online`)
 bot.on("message",async (message){
 if(message.author.bot) return;
 
-if(message.channel.id === "channel_id"){ //put the dark chat logs channel id here
+if(message.channel.id === "channel_id"){ //put the dark chat channel id here
 message.channel.send(message.content, message.attachments.first())
 message.delete({ timeout: 1000})
 }
