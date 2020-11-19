@@ -4,7 +4,7 @@
 // write npm init and then press enter to all(including the yes in the end)
 // then you have to install the packages that we need to use 
 // run npm i discord.js
-// after installing the package go to visual studio code and paste the code from here
+// after installing the package go to visual studio code open the fivem bot folder create a file named index.js and paste the code from here
 // open this site (https://discord.com/developers/applications) and make a new application and make it as a bot
 // if you want to add the bot in your server just go here (https://discordapi.com/permissions.html) select the administrator button and put in the client id your bots id
 // then copy the link and select your server 
