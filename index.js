@@ -16,12 +16,14 @@ const bot = new Client({partials: ["CHANNEL","GUILD_MEMBER","MESSAGE","REACTION"
 bot.on("ready", async function(){
 console.log(`${bot.user.tag} is now online`)
 });
-bot.on("message",async (message){
-if(message.author.bot) return;
 
-if(message.channel.id === "channel_id"){ //put the dark chat channel id here
-message.channel.send(message.content, message.attachments.first())
-message.delete({ timeout: 1000 })
-}
+bot.on("message",async function(message){
+    if(message.author.bot) return;
+  
+    if(message.channel.id === "channel_id"){ //put the dark chat channel id here
+    message.channel.send(message.content, message.attachments.first())
+    message.delete({ timeout: 2000 })
+    }
+    });
 });
 bot.on("token here") // you will find it at (https://discord.com/developers/applications)
