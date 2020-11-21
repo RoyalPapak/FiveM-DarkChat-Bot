@@ -23,4 +23,4 @@ bot.on('message', async message => {
     message.delete({ timeout: 2000 })
     }
     });
-bot.on("token here") // you will find it at (https://discord.com/developers/applications)
+bot.login("token here") // you will find it at (https://discord.com/developers/applications)
