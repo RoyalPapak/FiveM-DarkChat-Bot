@@ -13,9 +13,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on("ready", async function(){
-console.log(`${bot.user.tag} is now online`)
-});
+bot.on('ready', async () => console.log(`${bot.user.tag} is online!`))
 
 bot.on('message', async message => {
     if(message.author.bot) return;
