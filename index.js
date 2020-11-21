@@ -10,14 +10,14 @@
 // then copy the link and select your server 
 // Video: https://www.youtube.com/watch?v=j_sD9udZnCk
 
-const {Client,MessageEmbed} = require("discord.js"); //npm i discord.js
-const bot = new Client({partials: ["CHANNEL","GUILD_MEMBER","MESSAGE","REACTION","USER"]});
+const Discord = require('discord.js');
+const bot = new Discord.Client();
 
 bot.on("ready", async function(){
 console.log(`${bot.user.tag} is now online`)
 });
 
-bot.on("message",async function(message){
+bot.on('message', async message => {
     if(message.author.bot) return;
   
     if(message.channel.id === "channel_id"){ //put the dark chat channel id here
