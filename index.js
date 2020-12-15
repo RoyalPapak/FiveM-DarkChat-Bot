@@ -11,6 +11,7 @@
 // Video: https://www.youtube.com/watch?v=j_sD9udZnCk
 // Join here for help: https://discord.gg/VTdeXwUQKX || https://discord.gg/7seSqGm6mC
 const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js')
 const bot = new Discord.Client();
 
 bot.on('ready', async () => console.log(`${bot.user.tag} is online!`))
